@@ -24,12 +24,20 @@ const fs = require('fs');
 //         console.log("File Write Completed...");
 // })
 
-var message = "Hello from Node Application\n";
-fs.appendFile('./file3.txt', message, "utf-8", (err) => {
-    if (err)
-        console.error(err);
-    else
-        console.log("File Append Completed...");
-})
+// var message = "Hello from Node Application\n";
+// fs.appendFile('./file3.txt', message, "utf-8", (err) => {
+//     if (err)
+//         console.error(err);
+//     else
+//         console.log("File Append Completed...");
+// })
 
-console.log("Completed and waiting....");
+// const file = fs.openSync('file1.txt', 'r');
+// const buffer = Buffer.alloc(10);
+
+// const bytesRead = fs.readSync(file, buffer, 0, buffer.length, null);
+// fs.closeSync(file);
+
+// console.log(buffer.slice(0, bytesRead));
+
+// console.log(bytesRead);
