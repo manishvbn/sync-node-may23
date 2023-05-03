@@ -1,0 +1,1 @@
+console.log("Hello from logger folder index.js file");
