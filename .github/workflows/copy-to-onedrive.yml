@@ -1,0 +1,17 @@
+name: Copy to OneDrive
+on:
+  push:
+    branches:
+      - master
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Copy to OneDrive
+      uses: jakejarvis/onedrive-upload@v1.2.2
+      with:
+        source: .
+        target: https://1drv.ms/f/s!Ao-ceLq5rZm3jLRsmkAEhOi0-CV2gA?e=rm5hWW
+        refresh_token: ${{ secrets.ONEDRIVE_REFRESH_TOKEN }}
