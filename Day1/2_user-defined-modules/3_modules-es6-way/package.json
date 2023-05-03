@@ -1,0 +1,9 @@
+{
+  "name": "modules-es6-way",
+  "version": "1.0.0",
+  "description": "Understanding Modules in Node",
+  "private": true,
+  "type": "module",
+  "author": "Manish Sharma",
+  "license": "MIT"
+}
