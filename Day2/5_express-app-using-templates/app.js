@@ -17,6 +17,14 @@ app.get("/", (req, res, next) => {
     res.render("index", { pageTitle: "Index View" });
 });
 
+app.get("/about", (req, res, next) => {
+    res.render("about", { pageTitle: "About View" });
+});
+
+app.get("/contact", (req, res, next) => {
+    res.render("contact", { pageTitle: "Contact View" });
+});
+
 app.get("/employees", (req, res, next) => {
     res.render("employees", { pageTitle: "Employees View", empList: employees });
 });
