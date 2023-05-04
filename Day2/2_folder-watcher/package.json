@@ -1,0 +1,15 @@
+{
+  "name": "folder-watcher",
+  "version": "1.0.0",
+  "description": "Understanding npm packages",
+  "private": "true",
+  "author": "Manish Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
