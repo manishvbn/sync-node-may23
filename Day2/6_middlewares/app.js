@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('express');
 const logger = require('morgan');
+const favicon = require('serve-favicon');
 
 // Create an Express Application Request Handler
 const app = express();
@@ -14,6 +15,7 @@ var employees = [{ id: 1, name: "Manish" },
 { id: 5, name: "Ramakant" }];
 
 app.use(logger('dev'));
+app.use(favicon(__dirname + "/public/images/favicon.png"));
 
 // app.use((req, res, next) => {
 //     console.log("Request - Middleware One");
