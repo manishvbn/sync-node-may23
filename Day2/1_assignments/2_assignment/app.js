@@ -6,10 +6,17 @@
 
 const http = require('http');
 const fs = require('fs');
+const path = require('path');
 
 var server = http.createServer((req, res) => {
     if (req.url !== '/favicon.ico') {
-        const filepath = `${__dirname}${req.url}.pdf`;
+        // const filepath = `${__dirname}${req.url}.pdf`;
+
+        // const currentDir = process.cwd();
+        // const filepath = path.join(currentDir, url + '.pdf');
+        
+        const filepath = path.join(__dirname, req.url + '.pdf');
+
         const readStream = fs.createReadStream(filepath);
 
         res.setHeader("content-type", "application/pdf");
