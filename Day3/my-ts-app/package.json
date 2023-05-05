@@ -1,0 +1,17 @@
+{
+  "name": "my-ts-app",
+  "version": "1.0.0",
+  "description": "TS project",
+  "private": "true",
+  "scripts": {
+    "compile": "tsc -w",
+    "start" : "nodemon dist/app.js"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
