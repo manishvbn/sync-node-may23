@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const favicon = require('serve-favicon');
 const mongoose = require('mongoose');
+// const rateLimit = require("express-rate-limit");
 
 const passport = require('passport');
 const session = require('express-session');
@@ -27,6 +28,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// const limiter = rateLimit({
+//   windowMs: 60 * 60 * 1000, //1 Hour
+//   max: 20
+// });
+
+// app.use(limiter);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

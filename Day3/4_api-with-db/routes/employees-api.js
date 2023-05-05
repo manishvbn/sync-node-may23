@@ -1,7 +1,11 @@
 const express = require('express');
+const cors = require('cors');
+
 const empApiCtrl = require('../controllers/employees-api-controller');
 
 const router = express.Router();
+
+router.use(cors());
 
 // GET - /api/employees (Get All Employees)
 router.get("/", empApiCtrl.getAll);

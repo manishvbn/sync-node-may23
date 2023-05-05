@@ -1,0 +1,30 @@
+<div class="container">
+    <h3 class="text-warning">{{message}}</h3>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th></th>
+                <th>ACTIONS</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>
+                    <a href="#" class="text-info">Details</a>
+                </td>
+                <td>
+                    <a href="#" class="text-warning">Edit</a>
+                </td>
+                <td>
+                    <a href="#" class="text-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
